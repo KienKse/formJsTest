@@ -1,0 +1,35 @@
+body {
+  margin: 2em auto;
+  max-width: 600px;
+}
+
+form div {
+    margin-bottom: 0.5em;
+}
+form div label, form div input {
+    display: block;
+    margin-bottom: 0.3em;
+}
+
+#output {
+  padding: 1px;
+  width: 600px;
+  height: 200px;
+}
+
+/* RADIO */
+
+.radioClass {
+  float: left;
+  padding: 5px;
+}
+
+#campo-radio1, #campo-radio2 {
+  width: 5vh;
+  height: 3vh;
+}
+
+#campo-radio1:hover, #campo-radio2:hover {
+  width: 6vh;
+  height: 4vh;
+}

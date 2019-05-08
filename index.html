@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>K's Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <form id="bugScout" action="#" method="post">
+    <div class="form-group">
+        <label for="cod">Codigo Erro:</label>
+        <input class="form-control" type="text" name="cod" id="cod" />
+    </div>
+    <div class="form-group">
+        <label for="nomeErro">Nome Erro:</label>
+        <input class="form-control" type="text" name="nomeErro" id="nomeErro" />
+    </div>
+
+    <div class="form-group labels">
+        <label for="nomeErro">Validado: FIX</label>
+        <input class="radioClass" type="radio" value="sim" name="validado" id="campo-radio1" />
+        <label class="radioClass" for="validado">Sim</label>
+        <input class="radioClass" type="radio" value="nao" name="validado" id="campo-radio2" />
+        <label class="radioClass" for="validado">Não</label>
+    </div>
+</br>
+</br>
+    <div class="form-group">
+    	<label for="ocorrencia">Ocorrências:</label>
+    	<textarea class="form-control" name="ocorrencia" rows="5" cols="10"></textarea>
+    </div>
+    <div class="form-group">
+    	<label for="select">Selecione o tipo de resposta aplicada:</label>
+    	<select name="select" class="form-control">
+    		<option value="none" selected="selected">Selecione</option>
+    		<option value="justificativa">Justificativa</option>
+    		<option value="esclarecimento">Esclarecimento</option>
+    		<option value="modificado">Modificação</option>
+    	</select>
+
+    </div>
+    <div class="form-group">
+    	<label for="justificativa">Resposta:</label>
+    	<textarea class="form-control" name="justificativa" rows="5" cols="10"></textarea>
+    </div>
+    <p>
+        <input type="submit" value="Enviar" class="btn btn-primary btn-block" />
+    </p>
+</form>	
+<pre id="output"></pre>
+
+    <script  src="js/index.js"></script>
+
+
+</body>
+
+</html>
