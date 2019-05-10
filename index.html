@@ -14,27 +14,27 @@
   <form id="bugScout" action="#" method="post">
     <div class="form-group">
         <label for="cod">Codigo Erro:</label>
-        <input class="form-control" type="text" name="cod" id="cod" />
+        <input class="form-control" type="text" name="cod" id="cod" required/>
     </div>
     <div class="form-group">
-        <label for="nomeErro">Nome Erro:</label>
-        <input class="form-control" type="text" name="nomeErro" id="nomeErro" />
+        <label for="nome_erro">Nome Erro:</label>
+        <input class="form-control" type="text" name="nome_erro" id="nome_erro" required/>
     </div>
 
     <div class="form-group">
-    	<label for="select">Solução Validada?</label>
-    	<select name="select" class="form-control">
+    	<label for="validada">Solução Validada?</label>
+    	<select name="validada" class="form-control">
     		<option value="sim" selected="selected">Sim</option>
     		<option value="nao">Não</option>
     	</select>
     </div>
     <div class="form-group">
     	<label for="ocorrencia">Ocorrências:</label>
-    	<textarea class="form-control" name="ocorrencia" rows="5" cols="10"></textarea>
+    	<textarea class="form-control" name="ocorrencia" rows="5" cols="10" required></textarea>
     </div>
     <div class="form-group">
-    	<label for="select">Selecione o tipo de resposta aplicada:</label>
-    	<select name="select" class="form-control">
+    	<label for="tipo_resposta">Selecione o tipo de resposta aplicada:</label>
+    	<select name="tipo_resposta" class="form-control">
     		<option value="none" selected="selected">Selecione</option>
     		<option value="justificativa">Justificativa</option>
     		<option value="esclarecimento">Esclarecimento</option>
@@ -44,12 +44,12 @@
     </div>
     <div class="form-group">
     	<label for="justificativa">Resposta:</label>
-    	<textarea class="form-control" name="justificativa" rows="5" cols="10"></textarea>
+    	<textarea class="form-control" name="justificativa" rows="5" cols="10"required></textarea>
     </div>
     <p>
         <input type="submit" value="Enviar" class="btn btn-primary btn-block" />
     </p>
-</form>	
+</form>
 <pre id="output"></pre>
 
     <script  src="js/index.js"></script>
