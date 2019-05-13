@@ -23,16 +23,16 @@
 		return JSON.stringify( obj );
 	}
 
-	document.addEventListener( "DOMContentLoaded", function() {
-		var form = document.getElementById( "bugScout" );
-		var output = document.getElementById( "output" );
-		form.addEventListener( "submit", function( e ) {
-			e.preventDefault();
-			var json = toJSONString( this );
-			output.innerHTML = json;
-		}, false);
+	// document.addEventListener( "DOMContentLoaded", function() {
+	// 	var form = document.getElementById( "bugScout" );
+	// 	var output = document.getElementById( "output" );
+	// 	form.addEventListener( "submit", function( e ) {
+	// 		e.preventDefault();
+	// 		var json = toJSONString( this );
+	// 		output.innerHTML = json;
+	// 	}, false);
 
-	});
+	// });
 
 	/**
 				window.alert("Preencha o campo " + elements[i].name);
