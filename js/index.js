@@ -7,13 +7,6 @@
 			var name = element.name;
 			var value = element.value;
 
-			if( name == "tipo_resposta" &&  value == "none") {
-				window.alert("Selecione uma opção no campo resposta aplicada");
-				var campo = document.getElementsByName(elements[i].name);
-				campo[0].focus();
-				return false;
-			}
-
 			if( name ) {
 				obj[ name ] = value;
 			}
